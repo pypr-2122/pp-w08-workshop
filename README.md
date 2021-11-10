@@ -70,6 +70,7 @@ A couple of things to note:
 
 - There are 8 different endpoints you can use to get different data: `cities`, `countries`, `latest`, `locations`, `measurements`, `fetches`, `parameters`, `sources`. The [API reference](http://dhhagan.github.io/py-openaq/api.html) is where you can find the detail of how to use each of them and what they return.
 - The `parameters` endpoint gives you a summary of the different pollutants which are measured.
+- The `measurements` endpoint is what you'll need to use to obtain the actual data.
 - The input argument `df=True` is very useful -- it allows you to return the results of your request directly in a pandas dataframe, instead of having to parse JSON data yourself (as we did in the Week 7 workshop).
 - The API allows you to obtain up to 10,000 results with a single request. If you want to get data for several parameters and multiple stations or cities, you will reach this limit quickly! You'll need to make multiple separate requests. Request only the data that you need.
 
